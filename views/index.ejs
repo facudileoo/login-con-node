@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style-index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="header-seccion">
+        <header>
+            <nav class="header-nav">
+                <h1>se inicio sesion a las 9:08am</h1>
+                <div class="contenedor-forms">
+                    <% if (username === 'undefined') { %>
+                    <button><a href="/register">Registrarse</a></button>
+                    <button><a href="/login">Iniciar Sesion</a></button>
+                    <% } if (username !== 'undefined') { %>
+                    <button><a href="/logout">Cerrar Sesion</a></button>
+                    <% } %>
+                </div>
+            </nav>
+        </header>
+    </section>
+</body>
+</html>
